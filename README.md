@@ -56,7 +56,6 @@ Users should be able to:
 - [Figma](https://www.figma.com/)
 - [webpack 5](https://webpack.js.org/)
 - [sass](https://sass-lang.com/)
-- [postCSS](https://postcss.org/)
 
 ### What I learned
 
