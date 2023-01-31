@@ -3,4 +3,19 @@
 @use './_colors.scss';
 @use "_topography.scss" as fs;
 
+@mixin btn($color, $bg-color, $hover-bg-color) {
+  color: $color;
+  background-color: $bg-color;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.9375rem 5.9375rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  text-align: center;
+  letter-spacing: -0.0112rem;
 
+  &:hover {
+    background-color: $hover-bg-color;
+  }
+}
