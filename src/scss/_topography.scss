@@ -2,6 +2,8 @@ $fs-1: clamp(1.00rem, calc(0.88rem + 0.51vw), 1.13rem); // 16px - 18px
 $fs-2: clamp(1.13rem, calc(0.98rem + 0.30vw), 1.25rem); // 18px - 20px
 $fs-3: clamp(1.63rem, calc(1.51rem + 0.51vw), 1.75rem); // 26px - 28px
 $fs-4: clamp(1.75rem, calc(1.32rem + 0.89vw), 2.13rem); // 28px - 34px
-$fs-5: clamp(2.50rem, calc(1.07rem + 6.11vw), 4.00rem); // 40px - 64px
-$fs-6: clamp(3.00rem, calc(2.05rem + 4.07vw), 4.00rem); // 48px - 64px
-$fs-7: clamp(4.00rem, calc(2.29rem + 3.57vw), 5.50rem); // 64px - 88px
+$fs-5: clamp(2.00rem, calc(1.43rem + 1.19vw), 2.50rem); // 32px - 40px
+$fs-6: clamp(2.50rem, calc(1.64rem + 1.79vw), 3.25rem); // 40px - 52px
+$fs-7: clamp(2.50rem, calc(1.07rem + 6.11vw), 4.00rem); // 40px - 64px
+$fs-8: clamp(3.00rem, calc(2.05rem + 4.07vw), 4.00rem); // 48px - 64px
+$fs-9: clamp(4.00rem, calc(2.29rem + 3.57vw), 5.50rem); // 64px - 88px
