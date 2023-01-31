@@ -42,19 +42,21 @@ body {
   min-height: 100vh;
   margin-inline: auto;
 
-  &>* {
-    max-width: 100%;
+  & > * {
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
   }
 
-  &>main {
+  & > main {
     margin-block: auto;
   }
 
-  &> :first-child:not(main) {
+  & > :first-child:not(main) {
     margin-block-start: 0;
   }
 
-  &> :last-child:not(main) {
+  & > :last-child:not(main) {
     margin-block-end: 0;
   }
 }
