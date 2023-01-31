@@ -21,6 +21,16 @@ body {
   margin: 0;
   padding: 0;
   font-family: fonts.$primary-ff;
+  background-image: url(../img/bg-main-mobile.png);
+  background-repeat: no-repeat;
+
+  @media only screen and (min-width: 768px) {
+    background-image: url(../img/bg-main-tablet.png);
+  }
+
+  @media only screen and (min-width: 1440px) {
+    background-image: url(../img/bg-main-desktop.png);
+  }
 }
 
 .container {
@@ -31,21 +41,20 @@ body {
   width: 100%;
   min-height: 100vh;
   margin-inline: auto;
-  overflow-x: hidden;
 
-  & > * {
+  &>* {
     max-width: 100%;
   }
 
-  & > main {
+  &>main {
     margin-block: auto;
   }
 
-  & > :first-child:not(main) {
+  &> :first-child:not(main) {
     margin-block-start: 0;
   }
 
-  & > :last-child:not(main) {
+  &> :last-child:not(main) {
     margin-block-end: 0;
   }
 }
