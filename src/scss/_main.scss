@@ -4,3 +4,50 @@
 @use "./_colors.scss";
 @use "_topography.scss" as fs;
 @use "_space" as space;
+
+.main {
+  padding-inline: space.$page-inline-padding-small;
+
+  @media only screen and (min-width: 768px) {
+    padding-inline: space.$page-inline-padding-medium;
+  }
+
+  @media screen and (min-width: 1400px) {
+    padding-inline: calc(-1 * space.$page-inline-padding-reset);
+  }
+}
+
+.hero {
+  width: 100%;
+  border: 1px solid black;
+  max-width: 514px;
+
+  @media only screen and (min-width: 1024px) {
+    max-width: 850px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: fs.$fs-7;
+    line-height: fs.$fs-8;
+    letter-spacing: -0.454545px;
+    width: 100%;
+
+    @media only screen and (min-width: 768px) {
+      font-size: fs.$fs-9;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+  }
+
+  &__subtext {
+    font-weight: 400;
+    font-size: fs.$fs-1;
+    line-height: fs.$fs-3;
+
+    @media only screen and (min-width: 768px) {
+      font-size: fs.$fs-2;
+      line-height: fs.$fs-4;
+    }
+  }
+}
