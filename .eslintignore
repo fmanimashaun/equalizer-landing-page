@@ -1,3 +1,0 @@
-# ignore the config files in the root directory
-webpack.config.js
-postcss.config.js
