@@ -4,3 +4,38 @@
 @use "./_colors.scss";
 @use "_topography.scss" as fs;
 @use "_space" as space;
+
+.header {
+  position: relative;
+  padding-block-start: space.$heading-top-padding;
+  padding-inline: space.$page-inline-padding-small;
+
+  @media only screen and (min-width: 768px) {
+    padding-inline: space.$page-inline-padding-medium;
+  }
+  
+  @media screen and (min-width: 1400px) {
+    padding-inline: calc(-1 * space.$page-inline-padding-reset);
+  }
+    
+
+  &__pattern {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    width: calc(14.81rem + ((100vw - 48rem) / 42) * (19.5 - 14.81));
+    max-width: 312px;
+
+    @media only screen and (min-width: 768px) {
+      display: block;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
