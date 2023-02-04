@@ -1,1 +1,1 @@
-"use strict";(self.webpackChunkskilled_elearning_landing_page=self.webpackChunkskilled_elearning_landing_page||[]).push([[179],{497:()=>{}},e=>{e(e.s=497)}]);
+"use strict";(self.webpackChunkequalizer_landing_page=self.webpackChunkequalizer_landing_page||[]).push([[179],{497:()=>{}},e=>{e(e.s=497)}]);
