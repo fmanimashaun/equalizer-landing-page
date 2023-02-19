@@ -4,7 +4,7 @@ $page-inline-padding-medium: clamp(2.5rem, calc(-6.36rem + 18.45vw), 10.25rem); 
 $hero-top-margin: clamp(4rem, calc(2.61rem + 5.92vw), 7.94rem); // 64px - 128px
 $hero-buttom-margin-small: clamp(10.38rem, calc(5.43rem + 21.12vw), 15.56rem); // 166px - 248px
 $hero-buttom-margin-medium: clamp(15.56rem, calc(10.42rem + 10.71vw), 20.06rem); // 249px - 321px
-$page-inline-padding-reset: clamp(-10.25rem, calc(-41rem + 34.17vw), 0); // -164px - 0px
+$page-inline-padding-reset: clamp(-10.25rem, calc(-41rem + 34.17vw), 0rem); // -164px - 0px
 $hero-title-margin-bottom: clamp(1.25rem, calc(0.81rem + 1.88vw), 2.5rem); // 20px - 40px
 $offer-img-width-small: clamp(13rem, calc(9.3rem + 15.78vw), 16.88rem); // 208px - 270px
 $offer-img-width-medium: clamp(16.88rem, calc(13.88rem + 6.25vw), 19.5rem); // 270px - 312px
@@ -21,7 +21,7 @@ $offer-details-max-width: clamp(24.94rem, calc(21.58rem + 6.99vw), 27.88rem); //
 $offer-details-top-offset-small: clamp(-23.75rem, calc(-37.47rem + 58.52vw), -9.37rem); // -380px - -148px
 $offer-details-top-offset-medium: clamp(-9.37rem, calc(-13.66rem + 8.93vw), -5.62rem); // -150px - -90px
 $offer-details-right-offset: clamp(3.63rem, calc(0.98rem + 5.51vw), 5.94rem); // 58px - 95px
-$offer-padding-reset: clamp(0, calc(-30.75rem + 34.17vw), 10.25rem); // 0px - 164px
+$offer-padding-reset: clamp(0rem, calc(-30.75rem + 34.17vw), 10.25rem); // 0px - 164px
 $offer-buttom-margin: clamp(-24.37rem, calc(-36.72rem + 52.67vw), -11.44rem); // -390px - -182px
 $footer-top-margin-small: clamp(-47.37rem, calc(-70.63rem + 99.24vw), -23rem); // -758px - -368px
 $footer-buttom-padding-small: clamp(5rem, calc(4.7rem + 1.27vw), 5.31rem); // 80px - 85px
