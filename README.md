@@ -42,7 +42,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/fmanimashaun/equalizer-landing-page)
-- [Live Site URL]( https://fmanimashaun.github.io/equalizer-landing-page/)
+- [Live Site URL](https://fmanimashaun.github.io/equalizer-landing-page/)
 
 ## My process
 
