@@ -12,11 +12,11 @@
   @media only screen and (min-width: 768px) {
     padding-inline: space.$page-inline-padding-medium;
   }
-  
+
   @media screen and (min-width: 1400px) {
     padding-inline: calc(-1 * space.$page-inline-padding-reset);
   }
-    
+
 
   &__pattern {
     position: absolute;

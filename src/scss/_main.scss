@@ -201,11 +201,11 @@
     gap: 1rem;
   }
 
-  &__btn--apple{
-     @include mixins.btn(colors.$light, colors.$dark, colors.$turquoise);
-   }
+  &__btn--apple {
+    @include mixins.btn(colors.$light, colors.$dark, colors.$turquoise);
+  }
 
-     &__btn--android {
-       @include mixins.btn(colors.$dark, colors.$light, colors.$rajah);
-     }
+  &__btn--android {
+    @include mixins.btn(colors.$dark, colors.$light, colors.$rajah);
+  }
 }
