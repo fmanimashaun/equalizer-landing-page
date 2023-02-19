@@ -5,24 +5,20 @@
 @use "_topography.scss" as fs;
 @use "_space" as space;
 
-.main {
+.hero {
+  width: 100%;
   padding-inline: space.$page-inline-padding-small;
+  margin-block-start: space.$hero-top-margin;
+  margin-block-end: space.$hero-buttom-margin-small;
 
   @media only screen and (min-width: 768px) {
-    padding-inline: space.$page-inline-padding-medium;
+    padding-inline-start: space.$page-inline-padding-medium;
+    padding-inline-end: calc(space.$page-inline-padding-medium + 175px);
+    margin-block-end: space.$hero-buttom-margin-medium;
   }
 
   @media screen and (min-width: 1400px) {
     padding-inline: calc(-1 * space.$page-inline-padding-reset);
-  }
-}
-
-.hero {
-  width: 100%;
-  margin-block-start: space.$hero-top-margin;
-
-  @media only screen and (min-width: 768px) {
-    padding-inline-end: 175px;
   }
 
   &__title {
@@ -56,10 +52,17 @@
 
 .offers {
   position: relative;
-  width: 100%;
   min-height: 600px;
   background-color: colors.$dark;
   border-radius: 12px;
+
+  @media only screen and (min-width: 768px) {
+    margin-inline: space.$page-inline-padding-medium;
+  }
+
+  @media screen and (min-width: 1400px) {
+    margin-inline: calc(-1 * space.$page-inline-padding-reset);
+  }
 
   &__pattern {
     position: absolute;
@@ -93,11 +96,12 @@
     display: block;
     width: space.$offer-img-width-small;
     height: auto;
-    top: 0;
+    top: calc(-1 * space.$offer-img-offset-small);
     left: 50%;
     transform: translateX(-50%);
 
     @media only screen and (min-width: 768px) {
+      top: calc(-1 * space.$offer-img-offset-medium);
       width: space.$offer-img-width-medium;
     }
   }
