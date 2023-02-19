@@ -23,7 +23,8 @@ body {
   font-family: fonts.$primary-ff;
   background-image: url(../img/bg-mobile.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: top right;
   color: colors.$dark;
 
   @media only screen and (min-width: 768px) {
