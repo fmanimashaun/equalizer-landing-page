@@ -48,11 +48,6 @@ body {
     width: 100%;
     max-width: 1440px;
     margin-inline: auto;
-    // border: 1px solid red;
-  }
-
-  &>main {
-    margin-block: 0 auto;
   }
 
   &> :first-child:not(main) {
