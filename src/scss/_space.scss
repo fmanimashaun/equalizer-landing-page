@@ -3,3 +3,7 @@ $page-inline-padding-small: clamp(1.50rem, calc(0.55rem + 4.07vw), 2.50rem); // 
 $page-inline-padding-medium: clamp(2.50rem, calc(-6.36rem + 18.45vw), 10.25rem); // 40px - 164px
 $hero-top-margin: clamp(4.00rem, calc(2.61rem + 5.92vw), 7.94rem); // 64px - 128px
 $page-inline-padding-reset: clamp(-10.25rem, calc(-41.00rem + 34.17vw), 0.00rem); // -164px - 0px
+$hero-title-margin-bottom: clamp(1.25rem, calc(0.81rem + 1.88vw), 2.50rem); // 20px - 40px
+$offer-img-width-small: clamp(13.00rem, calc(9.30rem + 15.78vw), 16.88rem); // 208px - 270px
+$offer-img-width-medium: clamp(16.88rem, calc(13.88rem + 6.25vw), 19.50rem); // 270px - 312px
+$offer-bg-illustration-offset: clamp(1.94rem, calc(1.29rem + 1.34vw), 2.50rem); // 31px - 40px
