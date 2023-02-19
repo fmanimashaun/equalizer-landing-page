@@ -1,0 +1,26 @@
+/* stylelint-disable at-rule-no-unknown */
+/* stylelint-disable csstree/validator */
+@use './_colors.scss';
+@use "_topography.scss" as fs;
+
+@mixin btn($color, $bg-color, $hover-bg-color) {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: $color;
+  background-color: $bg-color;
+  border: none;
+  border-radius: 0.75rem;
+  padding-block: 0.9375rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  text-align: center;
+  letter-spacing: -0.0112rem;
+
+  &:hover {
+    background-color: $hover-bg-color;
+  }
+}

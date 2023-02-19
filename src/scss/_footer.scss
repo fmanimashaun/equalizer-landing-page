@@ -1,7 +1,66 @@
 /* stylelint-disable at-rule-no-unknown */
 /* stylelint-disable csstree/validator */
-@use "./_mixin.scss" as mixins;
 @use "./_colors.scss";
 @use "_topography.scss" as fs;
 @use "_space" as space;
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-inline: space.$page-inline-padding-small;
+  margin-block-start: calc(-1 * space.$footer-top-margin-small);
+  padding-block-end: space.$footer-buttom-padding-small;
+  gap: 32px;
+
+  @media only screen and (min-width: 768px) {
+    padding-inline: space.$page-inline-padding-medium;
+    padding-block-end: space.$footer-top-margin-medium;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    flex-direction: row;
+    gap: 137px;
+    padding-inline: calc(-1 * space.$page-inline-padding-reset);
+  }
+
+  &__copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+    width: 100%;
+
+    @media only screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0;
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+
+      @media only screen and (min-width: 768px) {
+        max-inline-size: 366px;
+      }
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    &-social {
+      display: flex;
+      gap: 20px;
+
+      &-img {
+        display: block;
+        width: 20px;
+        height: auto;
+      }
+    }
+  }
+}

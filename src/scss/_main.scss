@@ -1,6 +1,211 @@
 /* stylelint-disable at-rule-no-unknown */
 /* stylelint-disable csstree/validator */
-@use "./_mixin.scss" as mixins;
+@use "mixins";
 @use "./_colors.scss";
 @use "_topography.scss" as fs;
 @use "_space" as space;
+
+.hero {
+  width: 100%;
+  padding-inline: space.$page-inline-padding-small;
+  margin-block-start: space.$hero-top-margin;
+  margin-block-end: space.$hero-buttom-margin-small;
+
+  @media only screen and (min-width: 768px) {
+    padding-inline-start: space.$page-inline-padding-medium;
+    padding-inline-end: calc(space.$page-inline-padding-medium + 175px);
+    margin-block-end: space.$hero-buttom-margin-medium;
+  }
+
+  @media screen and (min-width: 1400px) {
+    padding-inline: calc(-1 * space.$page-inline-padding-reset);
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: fs.$fs-7;
+    line-height: fs.$fs-8;
+    letter-spacing: -0.454545px;
+    width: 100%;
+    max-inline-size: 856px;
+    margin-block-end: space.$hero-title-margin-bottom;
+
+    @media only screen and (min-width: 768px) {
+      font-size: fs.$fs-9;
+      line-height: 1;
+      letter-spacing: -0.727273px;
+    }
+  }
+
+  &__subtext {
+    font-weight: 400;
+    font-size: fs.$fs-1;
+    line-height: fs.$fs-3;
+    max-inline-size: 856px;
+
+    @media only screen and (min-width: 768px) {
+      font-size: fs.$fs-2;
+      line-height: fs.$fs-4;
+    }
+  }
+}
+
+.offers {
+  position: relative;
+  min-height: 600px;
+  background-color: colors.$dark;
+  border-radius: 12px;
+  margin-block-end: space.$offer-buttom-margin;
+
+  @media only screen and (min-width: 768px) {
+    margin-inline: space.$page-inline-padding-medium;
+  }
+
+  @media screen and (min-width: 1400px) {
+    margin-inline: calc(-1 * space.$page-inline-padding-reset);
+  }
+
+  &__pattern {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 280px;
+    max-width: 312px;
+    transform: translateX(-50%);
+    overflow-y: hidden;
+    border: 1px solid white;
+
+    @media only screen and (min-width: 768px) {
+      width: calc(17.5rem + ((100vw - 48rem) / 42) * (19.5 - 17.5));
+      left: space.$offer-bg-left-illustration-offset;
+      transform: translateX(0);
+    }
+
+    @media only screen and (min-width: 1400px) {
+      left: calc(space.$offer-bg-left-illustration-offset + space.$offer-padding-reset);
+    }
+
+    img {
+      position: relative;
+      top: 0;
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+
+      @media only screen and (min-width: 768px) {
+        top: calc(-1 * space.$offer-bg-top-illustration-offset);
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    display: block;
+    width: space.$offer-img-width-small;
+    height: auto;
+    top: calc(-1 * space.$offer-img-top-offset-small);
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media only screen and (min-width: 768px) {
+      top: calc(-1 * space.$offer-img-top-offset-medium);
+      width: space.$offer-img-width-medium;
+      left: space.$offer-img-left-offset-medium;
+      transform: translateX(0);
+    }
+
+    @media only screen and (min-width: 1400px) {
+      left: calc(space.$offer-img-left-offset-medium + space.$offer-padding-reset);
+    }
+  }
+
+  &__details {
+    position: absolute;
+    top: calc(-1 * space.$offer-details-top-offset-small);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    padding: space.$offer-details-padding;
+    color: colors.$light;
+    background-color: colors.$bittersweet;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 399px;
+
+    @media only screen and (min-width: 768px) {
+      max-width: space.$offer-details-max-width;
+      top: calc(-1 * space.$offer-details-top-offset-medium);
+      left: 100%;
+      transform: translateX(calc(-100% - space.$offer-details-right-offset));
+    }
+
+    @media only screen and (min-width: 1400px) {
+      transform: translateX(calc(-100% - space.$offer-details-right-offset - space.$offer-padding-reset));
+    }
+
+    &-title {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      margin-block-end: 12px;
+
+      @media only screen and (min-width: 768px) {
+        font-size: fs.$fs-5;
+        line-height: fs.$fs-6;
+        margin-block-end: space.$offer-details-title-margin-bottom;
+      }
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      margin-block-end: 36px;
+
+      @media only screen and (min-width: 768px) {
+        font-size: fs.$fs-2;
+        line-height: fs.$fs-4;
+        margin-block-end: space.$offer-details-text-margin-bottom;
+      }
+    }
+
+    &-price {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      font-weight: 700;
+      font-size: 65px;
+      line-height: 52px;
+      margin-block-end: 32px;
+
+      @media only screen and (min-width: 768px) {
+        margin-block-end: space.$offer-details-price-margin-bottom;
+      }
+
+      span {
+        margin-inline-start: 1rem;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+      }
+    }
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  &__btn--apple {
+    @include mixins.btn(colors.$light, colors.$dark, colors.$turquoise);
+  }
+
+  &__btn--android {
+    @include mixins.btn(colors.$dark, colors.$light, colors.$rajah);
+  }
+}
