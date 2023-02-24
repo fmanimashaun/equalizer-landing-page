@@ -73,7 +73,6 @@
     max-width: 312px;
     transform: translateX(-50%);
     overflow-y: hidden;
-    border: 1px solid white;
 
     @media only screen and (min-width: 768px) {
       width: calc(17.5rem + ((100vw - 48rem) / 42) * (19.5 - 17.5));
